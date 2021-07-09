@@ -10,45 +10,53 @@
             <th>
                 @Html.DisplayNameFor(model => model.Name)
             </th>
-            @*<th>
-                @Html.DisplayNameFor(model => model.AlterEgo)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.PrimaryAbility)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.SecondaryAbility)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.CatchPhrase)
-            </th>*@
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@*@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Name)
-            </td>*@
-            @*<td>
-                @Html.DisplayFor(modelItem => item.AlterEgo)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.PrimaryAbility)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.SecondaryAbility)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.CatchPhrase)
-            </td>*@
-            @*<td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
-            </td>*@
-        @*</tr>
-}
-    </tbody>*@
+
 </table>
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="picture" style=" background-color: #F20519; margin:20px; padding: 20px;  border: 10px dashed black; color: white">
+    @* <img src="~/Images/JT_Judge.PNG " alt="dogs" class="center" />*@
+
+    <div class="text-center">
+        <h1 class="display-4">BoxThemis&trade; this is new</h1><br>
+        <br>
+        <h1>Boxing's On-Line Training for Judges</h1>
+        <br>
+        <h2><i>Safer Matches & Reasoned Decisions</i></h2><br>
+        <h3>
+            Learn the Art of Judging the Sweet Science.<br><br>
+
+        </h3>
+    </div>
+</div>
+<br>
+<div class="audio-container">
+    <div style="margin:20px; padding:20px; border: 10px dashed black; color: white">
+        <center><h2><br>Listen to the introduction, or just click the "Registration" tab above.<br><br>Let's start your on-line training now!</h2></center><br />
+
+        <center>
+            <audio controls>
+                <source src="~/AudioFiles/manna&Holiday.m4a" >
+            </audio>
+        </center>
+    </div>
+</div>
+
+<br>
+<div style="margin:20px; padding:20px; border: 10px dashed black;background-color: gray;color: white">
+    <center>
+        <center><h2><br>We need to avoid unfair and unsafe moments like these.......<br></h2></center>
+        <video width="320" height="240" controls>
+            <source src="\AudioFiles\zkzwzqye2k3v_I9HKZxGa_Zpy8 - Copy.mp4">
+        </video>
+        <video width="320" height="240" controls>
+            <source src="\AudioFiles\StevenA_Smith.mp4">
+        </video>
+    </center>
+</div>
+</div>
+
+<!--protect from comments-->
